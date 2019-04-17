@@ -1,0 +1,22 @@
+自动打包脚本如何使用？
+脚本的github地址为:https://github.com/shixueqian/AutoPackageScript
+使用方法：
+
+1.将脚本复制到工程的根目录
+2.用代码编辑软件（比如Xcode）打开脚本，然后根据情况修改脚本内的一些参数
+3.打开终端，输入 sh ${打包脚本的全路径}就可执行打包脚本。
+比如我的项目工程在
+/Users/mac/Desktop/AutoPackageScriptDemo,
+那么我的脚本路径应该是
+/Users/mac/Desktop/AutoPackageScriptDemo/AutoPackageScript.sh,
+所以我要执行的命令是
+sh /Users/mac/Desktop/AutoPackageScriptDemo/AutoPackageScript.sh
+
+
+
+sh ${打包脚本的全路径}这行命令的作用是执行shell打包脚本。
+除了这样执行，我们还可以直接双击脚本文件就执行脚本，不过在这之前我们需要进行一些设置。
+首先，将AutoPackageScript.sh文件的扩展名去掉，变成AutoPackageScript
+然后，打开终端，执行命令 chmod +x ${打包脚本的全路径},这样可以给脚本加上可执行权限，并且默认的打开方式是终端。
+例如：chmod +x /Users/mac/Desktop/AutoPackageScriptDemo/AutoPackageScript
+以后，直接鼠标双击就可以执行脚本了
